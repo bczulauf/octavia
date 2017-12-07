@@ -1,0 +1,205 @@
+/*----- Global -----*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #111;
+    font-size: 18px;
+}
+
+h2 {
+    font-family: 'Martel', serif;
+    font-size: 52px;
+    font-weight: 300;
+    margin: 0;
+}
+
+h3 {
+    font-family: 'Martel', serif;
+    font-size: 28px;
+    font-weight: 300;
+    margin: 0;
+}
+
+h4 {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+}
+
+p {
+    line-height: 150%;
+    margin: 0;
+}
+
+.p-serif {
+    font-family: 'Martel', serif;
+    font-size: 16px;
+}
+
+.text-color-lt {
+    color: #ccc;
+}
+
+.text-color-md {
+    color: #777;
+}
+
+.container {
+    max-width: 1060px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.align-right {
+    margin-left: auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.m-btm-md {
+    margin-bottom: 20px;
+}
+
+.m-btm-sm {
+    margin-bottom: 10px;
+}
+
+.m-btm-md {
+    margin-bottom: 20px;
+}
+
+.m-btm-lg {
+    margin-bottom: 60px;
+}
+
+.m-top-sm {
+    margin-top: 10px;
+}
+
+.m-top-md {
+    margin-top: 20px;
+}
+
+.m-top-lg {
+    margin-top: 60px;
+}
+
+/*----- Header -----*/
+.header-content {
+    height: 60px;
+    align-items: center;
+}
+
+.header-logo {
+    font-family: 'Martel', serif;
+    text-decoration: none;
+    color: #111;
+}
+
+.header-link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #555;
+    font-size: 13px;
+    margin-right: 20px;
+}
+
+.header-link:last-child {
+    margin-right: 0;
+}
+
+/*----- Footer -----*/
+.footer-content {
+    height: 100px;
+    align-items: center;
+}
+
+.footer-logo {
+    font-family: 'Martel', serif;
+    text-decoration: none;
+}
+
+/*----- Button -----*/
+.button {
+    border-width: 3px;
+    font-weight: 400;
+    border-style: solid;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.button-primary {
+    border-color: #1C453B;
+    color: #fff;
+    background-color: #1C453B;
+}
+
+.button-primary:hover {
+    outline: 1px solid #1C453B;
+}
+
+.button-lg {
+    padding: 10px 40px;
+    font-size: 16px;
+}
+
+/*----- GRID -----*/
+.col {
+    margin-right: 20px;
+}
+.col:last-child {
+    margin-right: 0;
+}
+.one { width: 70px; }
+.two { width: 160px; }
+.three { width: 250px; }
+.four { width: 340px; }
+.five { width: 430px; }
+.six { width: 520px; }
+.seven { width: 610px; }
+.eight { width: 700px; }
+.nine { width: 790px; }
+.ten { width: 8800px; }
+.eleven { width: 970px; }
+.twelve { width: 1060px; }
+
+/*----- HOME -----*/
+.wrapper {
+    padding: 40px 0;
+}
+
+.tan {
+    background-color: #f9f8f7;
+}
+
+.gray {
+    background-color: #25282d;
+    color: #fff;
+}
+
+.home-info-box {
+    background-color: #fff;
+    padding: 20px 40px;
+    box-sizing: border-box;
+}
+
+.home-num {
+    border: 1px solid #111;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+}
