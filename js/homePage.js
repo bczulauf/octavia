@@ -83,7 +83,7 @@ class HomePage {
                         </div>
                         <div class="col four">
                             <h4 class="m-btm-sm">25%</h4>
-                            <p class="text-color-lt p-serif">Get an average of a 25% discount of retail plants.</p>
+                            <p class="text-color-lt p-serif">Get an average of a 25% discount off retail plants.</p>
                         </div>
                     </div>
                 </div>

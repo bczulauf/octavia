@@ -4,7 +4,7 @@ class Footer {
     load() {
         return this.html = `
             <div class="container flex footer-content">
-                <div class="footer-logo">Garden Spruce</div>
+                <a href="#home" class="footer-logo">Garden Spruce</a>
                 <div class="align-right"></div>
             </div>`
     }
