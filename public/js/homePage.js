@@ -10,7 +10,7 @@ class HomePage {
                         <p class="m-btm-md">
                             Garden Spruce is the simple, affordable design service that will make you fall in love with your garden.
                         </p>
-                        <a href="userForm" class="button button-primary button-lg">Get Started</a>
+                        <a href="${currentUser ? "#chat" : "#signup"}" id="start-button" class="button button-primary button-lg">${currentUser ? "Go to Dashboard" : "Get Started"}</a>
                     </div>
                     <div class="col one"></div>
                     <div class="col six">
@@ -39,7 +39,7 @@ class HomePage {
                             <div class="home-num">1</div>
                             <h4 class="m-btm-sm">Book a consultation</h4>
                             <p class="text-color-md p-serif">
-                                Based on the project details you provide, we will hand select one of our top designers to meet with you for a complimentary consult.
+                                Based on the project details you provide, we will hand select one of our designers to meet with you for a complimentary consult.
                             </p>
                         </div>
                     </div>
@@ -48,7 +48,7 @@ class HomePage {
                             <div class="home-num">2</div>
                             <h4 class="m-btm-sm">Buy design time</h4>
                             <p class="text-color-md p-serif">
-                                After reviewing your custom proposal from your designer, you can book design time at $90/hr to execute your project.
+                                After reviewing your free custom proposal from your designer, you can book design time at $80/hr to execute your project.
                             </p>
                         </div>
                         <div class="col six">
@@ -73,15 +73,15 @@ class HomePage {
                 <div class="container">
                     <h3 class="text-center m-btm-md">Pricing</h3>
                     <div class="flex text-center">
-                        <div class="col four">
+                        <div class="col four price-box">
                             <h4 class="m-btm-sm">Free</h4>
                             <p class="text-color-lt p-serif">Get a free in-person design consultation with an emerging design talent.</p>
                         </div>
-                        <div class="col four">
-                            <h4 class="m-btm-sm">$90/hr</h4>
-                            <p class="text-color-lt p-serif">Book time with your designer at $90/hr.</p>
+                        <div class="col four price-box">
+                            <h4 class="m-btm-sm">$80/hr</h4>
+                            <p class="text-color-lt p-serif">Book time with your designer at $80/hr.</p>
                         </div>
-                        <div class="col four">
+                        <div class="col four price-box">
                             <h4 class="m-btm-sm">25%</h4>
                             <p class="text-color-lt p-serif">Get an average of a 25% discount off retail plants.</p>
                         </div>
@@ -95,22 +95,6 @@ class HomePage {
         const div = this.el = document.createElement("div")
         div.innerHTML = this.html
         el.appendChild(div)
-    }
-
-    postShow() {
-        //document.getElementById("start-quiz").addEventListener("click", this.handler.bind(this), false)
-    }
-
-    handler (evt) {
-        evt.preventDefault()
-        if (!currentUser) {
-            // Creates an anonymous user, which will be removed when we collect email.
-            // spruceAPI.addAnonymousUser().then(() => {
-            //     router.navigate("homeForm")
-            // })
-        } else {
-            router.navigate("homeForm")
-        }
     }
 
     remove() {

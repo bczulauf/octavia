@@ -18,15 +18,38 @@ firebase.auth().onAuthStateChanged((user) => {
 const router = new Router(
     {
         home: new Layout (
-            new Header (),
+            new Header(),
             new HomePage(),
             new Footer()
         ),
-        // dashboard: new Layout (
-        //     new Header (),
-        //     new DashboardPage(),
-        //     new Footer()
-        // )
+        logout: new Layout (
+            new LogoutPage()
+        ),
+        login: new Layout (
+            new LoginForm()
+        ),
+        signup: new Layout (
+            new ProgressBar({ index: 1 }),
+            new SignupForm()
+        ),
+        address: new Layout (
+            new ProgressBar({ index: 2 }),
+            new AddressForm()
+        ),
+        garden: new Layout (
+            new ProgressBar({ index: 3 }),
+            new GardenForm()
+        ),
+        chat: new Layout (
+            new Header(),
+            new Navigation({ links: [{ url: "chat", name: "Chat" }, {url: "design", name: "Designs" }], selectedLink: "chat"}),
+            new ChatPage()
+        ),
+        design: new Layout (
+            new Header(),
+            new Navigation({ links: [{ url: "chat", name: "Chat" }, {url: "design", name: "Designs" }], selectedLink: "design"}),
+            new DesignPage()
+        )
     },
     document.querySelector('main')
 )

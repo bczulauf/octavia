@@ -16,21 +16,30 @@ class Router {
     async hashChanged (ev) {
         if (window.location.hash.length > 0) {
             const pageName = window.location.hash.substr(1)
-            const isOnboarding = ["userForm", "gardenForm"].includes(pageName)
-
-            // This logic should probably move to the route level. Don't want to allow users to retake onboarding.
-            if (isOnboarding && currentUser) {
-                this.navigate("dashboard")
-            } else {
-                this.show(pageName)
-            }
+            this.show(pageName)
         } else {
             this.show("home")
         }
     }
 
+    getUser () {
+        if (currentUser) {
+            return currentUser
+        }
+        
+        return new Promise((resolve, reject) => {
+            const unsubscribe = firebase.auth().onAuthStateChanged( (user) => {
+                firebase.auth().onAuthStateChanged((user) => {
+                    resolve(user)
+                })
+                unsubscribe()
+            })
+        })
+    }
+
     async show (pageName) {
         const page = this.routes[pageName]
+        await this.getUser()
         await page.load()
         this.el.innerHTML = ''
         page.show(this.el)
