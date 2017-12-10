@@ -124,6 +124,10 @@ p {
     justify-content: center;
 }
 
+.align-center {
+    align-items: center;
+}
+
 .m-btm-md {
     margin-bottom: 20px;
 }
@@ -334,4 +338,11 @@ p {
 
 .message-date {
     color: #aaa;
+}
+
+.splash {
+    background-image: url("imgs/splash.jpg");
+    height: 500px;
+    background-size: cover;
+    background-position: center;
 }

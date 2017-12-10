@@ -34,4 +34,16 @@ class FirebaseAPI {
     logoutUser() {
         return firebase.auth().signOut()
     }
+
+    // Messages
+    addMessage (options) {
+        return this.db.collection("messages").add({
+            clientId: options.clientId,
+            authorName: options.authorName,
+            authorId: options.authorId,
+            message: options.message,
+            date: new Date(),
+            timestamp: this.firebase.firestore.FieldValue.serverTimestamp()
+        })
+    }
 }

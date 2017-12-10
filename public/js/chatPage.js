@@ -6,7 +6,7 @@ class ChatPage {
             <div class="flex center">
                 <div class="eight">
                     <ul id="messages">
-                        <li>
+                        <li class="m-btm-md">
                             <div class="flex">
                                 <div class="message-author">Garden Spruce Team</div>
                                 <div class="message-date">${new Date()}</div>
@@ -36,12 +36,13 @@ class ChatPage {
 
     postShow() {
         const messagesElem = document.getElementById("messages")
-        const unsubscribe = firebase.firestore().collection("messages").where("userId", "==", currentUser.uid).orderBy("timestamp").onSnapshot((snapshot) => {
+        const unsubscribe = firebase.firestore().collection("messages").where("clientId", "==", currentUser.uid).orderBy("timestamp").onSnapshot((snapshot) => {
             const fragment = document.createDocumentFragment()
             snapshot.docChanges.forEach(function(change) {
                 if (change.type === "added") {
                     const data = change.doc.data()
                     const li = document.createElement("li")
+                    li.className = "m-btm-md"
 
                     li.innerHTML = `
                         <div class="flex">
@@ -67,7 +68,7 @@ class ChatPage {
         evt.preventDefault()
         const formElem = document.getElementById("message-form")
         const formData = Util.getFormData(new FormData(formElem))
-        spruceAPI.addMessage(currentUser.uid, "testStylist", currentUser.uid, currentUser.displayName, formData.message)
+        spruceAPI.addMessage({ clientId: currentUser.uid, authorName: currentUser.displayName, authorId: currentUser.uid, message: formData.message })
         formElem.reset()
     }
 }

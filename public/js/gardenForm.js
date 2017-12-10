@@ -20,42 +20,42 @@ class GardenForm {
                     </select>
                     <label class="label">Which design tasks do you need help with?</label>
                     <div class="flex wrap m-btm-lg eight garden-tasks">
-                        <input type="checkbox" class="checkbox-input" id="plants" name="plants" value="true" />
+                        <input type="checkbox" class="checkbox-input" id="plants" name="tasks" value="plants" />
                         <label for="plants" class="checkbox-label col two m-btm-md">
                             <div class="text-center">Plants</div>
                             <img src="imgs/plants.png" />
                         </label>
-                        <input type="checkbox" class="checkbox-input" id="fence" name="fence" value="true" />
+                        <input type="checkbox" class="checkbox-input" id="fence" name="tasks" value="fence" />
                         <label for="fence" class="checkbox-label col two m-btm-md">
                             <div class="text-center">Fence / Wall</div>
                             <img src="imgs/fence.png" />
                         </label>
-                        <input type="checkbox" class="checkbox-input" id="pots" name="pots" value="true" />
+                        <input type="checkbox" class="checkbox-input" id="pots" name="tasks" value="pots" />
                         <label for="pots" class="checkbox-label col two m-btm-md">
                             <div class="text-center">Pots</div>
                             <img src="imgs/pots.png" />
                         </label>
-                        <input type="checkbox" class="checkbox-input" id="water" name="waterFeature" value="true" />
+                        <input type="checkbox" class="checkbox-input" id="water" name="tasks" value="waterFeature" />
                         <label for="water" class="checkbox-label col two m-btm-md no-m-right">
                             <div class="text-center">Water Feature</div>
                             <img src="imgs/water.png" />
                         </label>
-                        <input type="checkbox" class="checkbox-input" id="veggie" name="veggieBed" value="true" />
+                        <input type="checkbox" class="checkbox-input" id="veggie" name="tasks" value="veggieBed" />
                         <label for="veggie" class="checkbox-label col two m-btm-md">
                             <div class="text-center">Veggie Bed</div>
                             <img src="imgs/veggie.png" />
                         </label>
-                        <input type="checkbox" class="checkbox-input" id="lawn" name="lawn" value="true" />
+                        <input type="checkbox" class="checkbox-input" id="lawn" name="tasks" value="lawn" />
                         <label for="lawn" class="checkbox-label col two m-btm-md">
                             <div class="text-center">Lawn</div>
                             <img src="imgs/lawn.png" />
                         </label>
-                        <input type="checkbox" class="checkbox-input" id="deck" name="deck" value="true" />
+                        <input type="checkbox" class="checkbox-input" id="deck" name="tasks" value="deck" />
                         <label for="deck" class="checkbox-label col two m-btm-md">
                             <div class="text-center">Deck</div>
                             <img src="imgs/deck.png" />
                         </label>
-                        <input type="checkbox" class="checkbox-input" id="play" name="play" value="true" />
+                        <input type="checkbox" class="checkbox-input" id="play" name="tasks" value="play" />
                         <label for="play" class="checkbox-label col two m-btm-md">
                             <div class="text-center">Play Area</div>
                             <img src="imgs/play.png" />

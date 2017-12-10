@@ -22,6 +22,11 @@ const router = new Router(
             new HomePage(),
             new Footer()
         ),
+        about: new Layout (
+            new Header(),
+            new AboutPage(),
+            new Footer()
+        ),
         logout: new Layout (
             new LogoutPage()
         ),
@@ -43,12 +48,14 @@ const router = new Router(
         chat: new Layout (
             new Header(),
             new Navigation({ links: [{ url: "chat", name: "Chat" }, {url: "design", name: "Designs" }], selectedLink: "chat"}),
-            new ChatPage()
+            new ChatPage(),
+            new Footer()
         ),
         design: new Layout (
             new Header(),
             new Navigation({ links: [{ url: "chat", name: "Chat" }, {url: "design", name: "Designs" }], selectedLink: "design"}),
-            new DesignPage()
+            new DesignPage(),
+            new Footer()
         )
     },
     document.querySelector('main')
