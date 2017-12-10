@@ -3,7 +3,7 @@ class AboutPage {
 
     load() {
         return this.html = `
-            <div class="splash flex center align-center">
+            <div class="splash flex center align-center m-btm-lg">
                 <div class="six">
                     <h2>
                         A better way to design your garden.
