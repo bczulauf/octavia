@@ -27,6 +27,11 @@ const router = new Router(
             new AboutPage(),
             new Footer()
         ),
+        portfolio: new Layout (
+            new Header(),
+            new PortfolioPage(),
+            new Footer()
+        ),
         logout: new Layout (
             new LogoutPage()
         ),
