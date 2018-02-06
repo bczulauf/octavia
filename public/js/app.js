@@ -18,9 +18,7 @@ firebase.auth().onAuthStateChanged((user) => {
 const router = new Router(
     {
         home: new Layout (
-            new Header(),
-            new HomePage(),
-            new Footer()
+            new HomePage()
         ),
         about: new Layout (
             new Header(),
