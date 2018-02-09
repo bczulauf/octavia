@@ -3,7 +3,7 @@ class HomePage {
 
     load() {
         return this.html = `
-            <div class="flex center m-btm-md">
+            <div class="flex center m-btm-lg">
                 <div class="twelve motif" style="background-image: url(imgs/motif4.png)"></div>
             </div>
             <div class="container">
@@ -19,42 +19,57 @@ class HomePage {
                 <div class="flex center m-btm-lg">
                     <a href="" id="start-button" class="button button-primary button-lg m-btm-lg">Get Started</a>
                 </div>
-                <div class="flex center no-wrap m-btm-md">
-                        <div class="two frame" style="background-image: url(imgs/one.jpg)"></div>
-                        <div class="two frame" style="background-image: url(imgs/two.jpg)"></div>
-                        <div class="two frame" style="background-image: url(imgs/garden6.jpg)"></div>
-                        <div class="two frame" style="background-image: url(imgs/four.jpg)"></div>
-                        <div class="two frame" style="background-image: url(imgs/five.jpg)"></div>
-                        <div class="two frame" style="background-image: url(imgs/six.jpg)"></div>
-                        <div class="two frame" style="background-image: url(imgs/garden1.jpg)"></div>
-                        <div class="two frame" style="background-image: url(imgs/garden2.jpg)"></div>
-                        <div class="two frame" style="background-image: url(imgs/garden3.jpg)"></div>
-                        <div class="two frame" style="background-image: url(imgs/garden4.jpg)"></div>
+                <div class="flex center no-wrap m-btm-lg">
+                    <div class="twelve flex">
+                        <div class="four h-four center-img col" style="background-image: url(imgs/garden1.jpg)"></div>
+                        <div class="eight col">
+                            <div class="flex m-btm-md">
+                                <div class="two h-two center-img col" style="background-image: url(imgs/one.jpg)"></div>
+                                <div class="two h-two center-img col" style="background-image: url(imgs/two.jpg)"></div>
+                                <div class="two h-two center-img col" style="background-image: url(imgs/five.jpg)"></div>
+                                <div class="two h-two center-img col" style="background-image: url(imgs/four.jpg)"></div>
+                            </div>
+                            <div class="flex">
+                                <div class="two h-two center-img col" style="background-image: url(imgs/garden2.jpg)"></div>
+                                <div class="two h-two center-img col" style="background-image: url(imgs/garden3.jpg)"></div>
+                                <div class="two h-two center-img col" style="background-image: url(imgs/garden4.jpg)"></div>
+                                <div class="two h-two center-img col" style="background-image: url(imgs/garden5.jpg)"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="flex center tan m-btm-lg">
                     <div class="twelve">
-                        <h3 class="text-center m-btm-md m-top-lg">How Garden Spruce works</h3>
+                        <h3 class="text-center m-btm-lg m-top-lg">How Garden Spruce works</h3>
                         <div class="flex">
                             <div class="seven m-btm-lg col">
-                                <div class="flex align-center m-btm-md">
+                                <div class="flex align-center m-btm-lg">
                                     <div class="num col">1</div>
-                                    <p class="six col">You tell us about you, your style, and your needs.</p>
+                                    <div class="six col">
+                                        <h4 class="m-btm-md">You tell us about you.</h4>
+                                        <p>We learn about your style and needs and match you with a wonderfully talented garden designer in your area.</p>
+                                    </div>
                                 </div>
-                                <div class="flex align-center m-btm-md">
+                                <div class="flex align-center m-btm-lg">
                                     <div class="num col">2</div>
-                                    <p class="six col">We match you with a wonderfully talented garden designer in your area.</p>
+                                    <div class="six col">
+                                        <h4 class="m-btm-md">Get a complimentary consult.</h4>
+                                        <p>You meet with your designer either in-person or over the phone and your designer will create a custom proposal for your project.</p>
+                                    </div>
                                 </div>
-                                <div class="flex align-center m-btm-md">
+                                <div class="flex align-center m-btm-lg">
                                     <div class="num col">3</div>
-                                    <p class="six col">You get a complimentary consult and custom proposal.</p>
+                                    <div class="six col">
+                                        <h4 class="m-btm-md">Purchase a design package</h4>
+                                        <p>You pick the design package that is right for you.</p>
+                                    </div>
                                 </div>
-                                <div class="flex align-center m-btm-md">
+                                <div class="flex align-center m-btm-lg">
                                     <div class="num col">4</div>
-                                    <p class="six col">You purchase a design package and receive a design and plant list.</p>
-                                </div>
-                                <div class="flex align-center m-btm-md">
-                                    <div class="num col">5</div>
-                                    <p class="six col">We help you manage and execute your design from plant purchases to implementation.</p>
+                                    <div class="six col">
+                                        <h4 class="m-btm-md">Excecute with ease.</h4>
+                                        <p>We help you manage and execute your design from plant purchases to implementation.</p>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col one"></div>
