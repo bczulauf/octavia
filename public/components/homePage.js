@@ -38,39 +38,37 @@ class HomePage {
                 <div class="flex center tan m-btm-lg">
                     <div class="twelve">
                         <h3 class="text-center m-btm-lg m-top-lg">How Garden Spruce works</h3>
-                        <div class="flex">
+                        <div class="flex center">
                             <div class="seven m-btm-lg col">
                                 <div class="flex align-center m-btm-lg">
                                     <div class="num col">1</div>
                                     <div class="six col">
-                                        <h4 class="m-btm-md">You tell us about you.</h4>
+                                        <h4>You tell us about you.</h4>
                                         <p>We learn about your style and needs and match you with a wonderfully talented garden designer in your area.</p>
                                     </div>
                                 </div>
                                 <div class="flex align-center m-btm-lg">
                                     <div class="num col">2</div>
                                     <div class="six col">
-                                        <h4 class="m-btm-md">Get a complimentary consult.</h4>
+                                        <h4>Get a complimentary consult.</h4>
                                         <p>You meet with your designer either in-person or over the phone and your designer will create a custom proposal for your project.</p>
                                     </div>
                                 </div>
                                 <div class="flex align-center m-btm-lg">
                                     <div class="num col">3</div>
                                     <div class="six col">
-                                        <h4 class="m-btm-md">Purchase a design package</h4>
+                                        <h4>Purchase a design package</h4>
                                         <p>You pick the design package that is right for you.</p>
                                     </div>
                                 </div>
                                 <div class="flex align-center m-btm-lg">
                                     <div class="num col">4</div>
                                     <div class="six col">
-                                        <h4 class="m-btm-md">Excecute with ease.</h4>
+                                        <h4>Excecute with ease.</h4>
                                         <p>We help you manage and execute your design from plant purchases to implementation.</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col one"></div>
-                            <div class="col four h-four center-img frame-border" style="background-image: url(imgs/flowers.jpg)"></div>
                         </div>
                     </div>
                 </div>

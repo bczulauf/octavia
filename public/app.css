@@ -27,9 +27,8 @@ h3 {
 }
 
 h4 {
-    font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
-    font-size: 18px;
+    font-family: 'Martel', serif;
+    font-size: 20px;
     font-weight: 600;
     margin: 0;
 }
@@ -269,13 +268,13 @@ p {
 }
 
 .tan {
-    background-color: #faf8f8;
+    background-color: #f8f8f8;
 }
 
 .price-box {
     box-sizing: border-box;
     padding: 30px;
-    border-top: 10px solid #dca795;
+    border-top: 10px solid #f9e5de;
     box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .1);
 }
 
@@ -287,7 +286,7 @@ p {
 }
 
 .progress {
-    background-color: #dca795;
+    background-color: #f9e5de;
 }
 
 /*  #Mobile 
