@@ -3,21 +3,18 @@ class HomePage {
 
     load() {
         return this.html = `
-            <div class="flex center m-btm-lg">
-                <div class="twelve motif" style="background-image: url(imgs/motif4.png)"></div>
-            </div>
             <div class="container">
                 <div class="flex center">
                     <div class="twelve">
-                        <div class="m-btm-md text-center logo">Garden Spruce</div>
-                        <h2 class="text-center">Love your garden</h2>
+                        <div class="m-btm-lg m-top-lg text-center logo">Garden Spruce</div>
+                        <h2 class="text-center">Fall in love with your garden.</h2>
                         <p class="text-center m-btm-lg text-blurb">
                             Work with an amazing local garden designer, starting at just $149.
                         </p>
                     </div>
                 </div>
                 <div class="flex center m-btm-lg">
-                    <a href="" id="start-button" class="button button-primary button-lg m-btm-lg">Get Started</a>
+                    <a href="#addressForm" id="start-button" class="button button-primary button-lg m-btm-lg">Get Started</a>
                 </div>
                 <div class="flex center no-wrap m-btm-lg">
                     <div class="twelve flex">
@@ -86,7 +83,7 @@ class HomePage {
                                 <h4 class="m-btm-md">$149</h4>
                                 <p class="m-btm-lg">Get a quick design sketch for a single space.</p>
                                 <div class="flex center">
-                                    <a href="" id="start-button" class="button button-secondary button-lg">Select mini</a>
+                                    <a href="#addressForm" id="start-button" class="button button-secondary button-lg">Select mini</a>
                                 </div>
                             </div>
                             <div class="col four price-box m-btm-md">
@@ -94,7 +91,7 @@ class HomePage {
                                 <h4 class="m-btm-md">$499</h4>
                                 <p class="m-btm-lg">Get a full garden design and complete product list.</p>
                                 <div class="flex center">
-                                    <a href="" id="start-button" class="button button-secondary button-lg">Select full</a>
+                                    <a href="#addressForm" id="start-button" class="button button-secondary button-lg">Select full</a>
                                 </div>
                             </div>
                             <div class="col four price-box m-btm-md">
@@ -102,7 +99,7 @@ class HomePage {
                                 <h4 class="m-btm-md">Free</h4>
                                 <p class="m-btm-lg">Get a complementary in-person consultation.</p>
                                 <div class="flex center">
-                                    <a href="" id="start-button" class="button button-secondary button-lg">Select consult</a>
+                                    <a href="#addressForm" id="start-button" class="button button-secondary button-lg">Select consult</a>
                                 </div>
                             </div>
                         </div>

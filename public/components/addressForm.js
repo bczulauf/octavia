@@ -6,15 +6,13 @@ class AddressForm {
         return this.html = `
             <div class="text-center m-btm-lg">
                 <h3>Where is your garden?</h3>
-                <p>We will find the perfect designer for you in your area.</p>
             </div>
             <div class="flex center">
                 <form id="address-form" class="five">
-                    <div class="flex">
-                        <input name="address" class="inpt block m-btm-md four col" type="text" placeholder="Street address" />
-                        <input name="zip" class="inpt block m-btm-md one col" type="text" placeholder="ZIP" />
+                    <input name="zip" class="inpt block m-btm-lg five text-center" required type="text" placeholder="ZIP" />
+                    <div class="flex center">
+                        <button id="address-button" type="submit" class="button button-primary button-lg">Next</button>
                     </div>
-                    <button id="address-button" type="submit" class="button button-primary button-lg">Next</button>
                 </form>
             </div>`
     }
@@ -34,8 +32,8 @@ class AddressForm {
     handler (evt) {
         evt.preventDefault()
         const formData = Util.getFormData(new FormData(evt.target))
-        spruceAPI.updateUser({ userId: currentUser.uid, data: formData }).then((user) => {
-            router.navigate("garden")
-        })
+        evt.preventDefault()
+        sessionStorage.setItem("gardenLocation",  Util.getFormData(new FormData(this.formElem)).budget)
+        router.navigate("gardenForm")
     }
 }

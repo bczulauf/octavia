@@ -7,6 +7,11 @@ body {
     font-size: 18px;
 }
 
+@font-face {
+    font-family: 'Chloe';
+    src: url(fonts/chloe.otf);
+}
+
 h2 {
     font-family: 'Martel', serif;
     font-size: 52px;
@@ -35,12 +40,6 @@ p {
     margin: 0;
 }
 
-.motif {
-    height: 140px;
-    background-size: cover;
-    background-position: top;
-}
-
 .text-blurb {
     color: #555;
     font-size: 20px;
@@ -57,10 +56,8 @@ p {
 }
 
 .logo {
-    font-family: 'Martel', serif;
-    font-size: 18px;
-    text-transform: uppercase;
-    letter-spacing: 10px;
+    font-family: 'Chloe', serif;
+    font-size: 48px;
 }
 
 .frame {
@@ -84,23 +81,56 @@ p {
     box-sizing: border-box;
 }
 
-.p-serif {
-    font-family: 'Martel', serif;
-    font-size: 16px;
+.radio-input {
+    display: none;
+}
+
+.radio-label {
+    text-align: center;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+.radio-label.three:nth-of-type(4n) {
+    margin-right: 0;
+}
+
+.radio-label.four:nth-of-type(3n) {
+    margin-right: 0;
+}
+
+.radio-border {
+    border: 1px solid #ccc;
+}
+
+.radio-label:hover {
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .1);
+    border-color: #555;
+}
+
+.radio-input:checked + .radio-label {
+    border-color: #111;
+    outline: 2px solid #111;
 }
 
 .inpt {
-    border: 1px solid #ccc;
-    height: 48px;
-    text-indent: 10px;
+    border: none;
+    border-bottom: 1px solid #111;
+    height: 54px;
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
-    box-sizing: border-box;
-    width: 100%;
+    text-indent: 10px;
+    outline: none;
 }
 
 .inpt::placeholder {
     color: #aaa;
+}
+
+.p-serif {
+    font-family: 'Martel', serif;
+    font-size: 16px;
 }
 
 .textarea {
@@ -109,43 +139,6 @@ p {
     resize: none;
     padding: 10px;
     text-indent: 0;
-}
-
-.label {
-    margin-bottom: 10px;
-    font-weight: 700;
-    display: block;
-}
-
-.checkbox-input {
-    display: none;
-}
-
-.checkbox-label {
-    border: 1px solid #ccc;
-    color: #111;
-    background: #fff;
-    flex: 1;
-    text-align: center;
-    box-sizing: border-box;
-    display: block;
-    padding: 20px 0;
-}
-
-.checkbox-input:checked + .checkbox-label {
-    background-color: #eaffc4;
-}
-
-.checkbox-label img {
-    width: 60px;
-}
-
-.text-color-lt {
-    color: #ccc;
-}
-
-.text-color-md {
-    color: #777;
 }
 
 .block {
@@ -201,30 +194,6 @@ p {
     margin-top: 60px;
 }
 
-/*----- Header -----*/
-.header-content {
-    height: 60px;
-    align-items: center;
-}
-
-.header-logo {
-    font-family: 'Martel', serif;
-    text-decoration: none;
-    color: #111;
-}
-
-.header-link {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #555;
-    font-size: 13px;
-    margin-right: 20px;
-}
-
-.header-link:last-child {
-    margin-right: 0;
-}
-
 /*----- Footer -----*/
 .footer-content {
     height: 100px;
@@ -243,16 +212,15 @@ p {
     font-weight: 600;
     border-style: solid;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Martel', serif;
     text-decoration: none;
     display: inline-block;
-    text-transform: uppercase;
 }
 
 .button-primary {
-    border-color: #dca795;
-    color: #fff;
-    background-color: #dca795;
+    border-color: #f9e5de;
+    color: #111;
+    background-color: #f9e5de;
 }
 
 .button-secondary {
@@ -262,13 +230,12 @@ p {
 
 .button-lg {
     height: 48px;
-    font-size: 16px;
+    font-size: 18px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex: 0 0 auto;
-    padding: 0 30px;
-    border-radius: 48px;
+    padding: 0 60px;
 }
 
 /*----- GRID -----*/
@@ -305,27 +272,6 @@ p {
     background-color: #faf8f8;
 }
 
-.gray {
-    background-color: #25282d;
-    color: #fff;
-}
-
-.home-info-box {
-    background-color: #fff;
-    padding: 20px 40px;
-    box-sizing: border-box;
-}
-
-.home-num {
-    border: 1px solid #111;
-    height: 30px;
-    width: 30px;
-    line-height: 30px;
-    text-align: center;
-    margin-bottom: 10px;
-    margin-right: 20px;
-}
-
 .price-box {
     box-sizing: border-box;
     padding: 30px;
@@ -341,67 +287,7 @@ p {
 }
 
 .progress {
-    background-color: #1C453B;
-}
-
-/*----- Garden -----*/
-.garden-tasks label {
-    flex: 0 0 auto;
-}
-
-.no-m-right {
-    margin-right: 0;
-}
-
-/*----- Nav -----*/
-.nav {
-    border-bottom: 1px solid #eee;
-    margin-bottom: 60px;
-}
-
-.nav-link {
-    margin: 10px 20px 0 0;
-    display: inline-block;
-    text-decoration: none;
-    box-sizing: border-box;
-    border-bottom: 3px solid #fff;
-    padding-bottom: 10px;
-    color:#111;
-}
-
-.nav-link:last-child {
-    margin-right: 0;
-}
-
-.nav-link-selected {
-    border-bottom-color: #1C453B;
-}
-
-#messages {
-    list-style-type: none;
-    margin: 0 0 20px 0;
-    padding: 0;
-}
-
-.message-author {
-    font-weight: 700;
-    margin-right: 20px;
-}
-
-.message-date {
-    color: #aaa;
-}
-
-.splash {
-    background-image: url("imgs/splash.jpg");
-    height: 500px;
-    background-size: cover;
-    background-position: center;
-}
-
-.no-wrap {
-    flex-wrap: nowrap;
-    overflow: hidden;
+    background-color: #dca795;
 }
 
 /*  #Mobile 

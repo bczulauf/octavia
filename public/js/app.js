@@ -20,45 +20,28 @@ const router = new Router(
         home: new Layout (
             new HomePage()
         ),
-        about: new Layout (
-            new Header(),
-            new AboutPage(),
-            new Footer()
-        ),
-        portfolio: new Layout (
-            new Header(),
-            new PortfolioPage(),
-            new Footer()
-        ),
-        logout: new Layout (
-            new LogoutPage()
-        ),
-        login: new Layout (
-            new LoginForm()
-        ),
-        signup: new Layout (
+        addressForm: new Layout (
             new ProgressBar({ index: 1 }),
-            new SignupForm()
-        ),
-        address: new Layout (
-            new ProgressBar({ index: 2 }),
             new AddressForm()
         ),
-        garden: new Layout (
-            new ProgressBar({ index: 3 }),
+        gardenForm: new Layout (
+            new ProgressBar({ index: 2 }),
             new GardenForm()
         ),
-        chat: new Layout (
-            new Header(),
-            new Navigation({ links: [{ url: "chat", name: "Chat" }, {url: "design", name: "Designs" }], selectedLink: "chat"}),
-            new ChatPage(),
-            new Footer()
+        styleForm: new Layout (
+            new ProgressBar({ index: 3 }),
+            new StyleForm()
         ),
-        design: new Layout (
-            new Header(),
-            new Navigation({ links: [{ url: "chat", name: "Chat" }, {url: "design", name: "Designs" }], selectedLink: "design"}),
-            new DesignPage(),
-            new Footer()
+        budgetForm: new Layout (
+            new ProgressBar({ index: 4 }),
+            new BudgetForm()
+        ),
+        userForm: new Layout (
+            new ProgressBar({ index: 5 }),
+            new UserForm()
+        ),
+        "welcome/(.*)": new Layout (
+            new WelcomePage(),
         )
     },
     document.querySelector('main')
