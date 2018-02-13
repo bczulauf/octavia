@@ -80,6 +80,16 @@ p {
     box-sizing: border-box;
 }
 
+.designer-img {
+    height: 160px;
+    width: 160px;
+    border-radius: 80px;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
 .radio-input {
     display: none;
 }
@@ -88,7 +98,6 @@ p {
     text-align: center;
     box-sizing: border-box;
     margin-bottom: 20px;
-    text-transform: capitalize;
 }
 
 .radio-label.three:nth-of-type(4n) {

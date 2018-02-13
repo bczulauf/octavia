@@ -1,5 +1,11 @@
 class WelcomePage {
     constructor() {
+        this.designers = {
+            octavia: {
+                name: "octavia",
+                img: "octavia.jpg"
+            }
+        }
     }
 
     load(options) {
@@ -7,12 +13,20 @@ class WelcomePage {
         return firebase.firestore().collection("users").doc(uid).get().then((doc) => {
             return this.html = `
                 <div class="flex center">
-                    <div class="eight">
-                        <h3 class="text-center">
-                            <span class="capitalize">${doc.data().name}</span>, meet your stylist.
+                    <div class="text-center logo m-btm-lg m-top-lg">Garden Spruce</div>
+                </div>
+                <div class="flex center">
+                    <div class="six">
+                        <h3 class="text-center m-btm-lg">
+                            Meet your garden designer.
                         </h3>
-                        <p class="text-center">You have been matched with <span class="bold capitalize">${doc.data().stylist}</span></p>
-                        <p class="m-btm-lg text-center"><span class="capitalize">${doc.data().stylist}</span> will pick 3 different pieces just for you. Look for an email soon with a link to see your items.</p>
+                        <div class="flex center m-btm-lg">
+                            <div><img src="imgs/${this.designers[doc.data().stylist].img}" class="designer-img" /></div>
+                        </div>
+                        <p class="m-btm-md text-center quote">
+                            "I have been a garden designer in Seattle for over twenty years and..."
+                        </p>
+                        <div class="text-center capitalize"><b>- ${doc.data().stylist}</b></div>
                     </div>
                 </div>
                 `

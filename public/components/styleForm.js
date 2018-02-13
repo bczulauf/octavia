@@ -8,7 +8,7 @@ class StyleForm {
             <div class="flex center">
                 <div class="twelve">
                     <h3 class="text-center m-btm-lg">
-                        I like these garden styles...
+                        I like these garden styles. Click on as many as you want.
                     </h3>
                     <form id="style-form">
                         <div class="flex m-btm-lg">

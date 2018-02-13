@@ -3,11 +3,11 @@ class UserForm {
 
     load() {
         return this.html = `
+            <h3 class="text-center m-btm-lg">
+                Sign up and meet your garden designer!
+            </h3>
             <div class="flex center">
                 <div class="six">
-                    <h3 class="text-center m-btm-lg">
-                        Sign up and meet your stylist!
-                    </h3>
                     <form id="user-form">
                         <div class="text-center"><b>Name</b></div>
                         <input type="text" class="inpt block six m-btm-lg text-center col" name="name" placeholder="Your name" required/>
